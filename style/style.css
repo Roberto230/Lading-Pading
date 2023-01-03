@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body{
+    background-color: rgb(25,46,58);
+}
+
+.container-cabecario{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 200px;
+    height: auto;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 5rem;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer; 
+}
+ul li a:hover{
+    color:#5bacdf;
+}
+
+.btn{
+    background-color: #5bacdf;
+    padding: 0.9rem 1.3rem;
+    border-radius: 0.5rem;
+}
+
+.btn:hover{
+    background-color: #011927;
+}
+
+.meio{
+    display: flex;
+    max-width: 100%;
+    margin-top: 5rem;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.esquerda{
+    max-width: 100%;
+}
+
+.title h1{
+    font-size: 50px;
+    color: #ccc;
+}
+
+.esquerda p{
+    color: #ccc;
+    line-height: 2.5rem;
+}
+
+button{
+    color: #fff;
+    background-color: #5bacdf;
+    padding: 0.9rem 1.3rem;
+    border-radius: 0.5rem;
+    border: none;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #011927;
+}
+
+.direita img{
+    max-width: 100%;
+    width: 650px;
+    height: auto;
+}
+
+aside{
+    display: none;
+}
+
+@media screen and (max-width:740px){
+    ul{
+        display: none;
+    }
+
+    .links{
+        display: block;
+    }
+
+    .logo{
+        margin-right: 15rem;
+    }
+
+    aside{
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        overflow: hidden;
+    }
+}
