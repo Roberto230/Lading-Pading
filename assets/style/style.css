@@ -117,4 +117,85 @@ aside{
         display: flex;
         overflow: hidden;
     }
+
+    .icon-menu ion-icon{
+        width: 45px;
+        height: 45px;
+        margin-right: 1.5rem;
+        margin-top: 2rem;
+        color: #fff;
+    }
+
+    #barra-menu{
+        background-color: #2889c2;
+        width: 0px;
+        height: 100%;
+        transition: 0.3s all;
+    }
+
+    #barra-menu ul{
+        align-items: center;
+        text-align: center;
+        padding: 5rem;
+        line-height: 5rem;
+    }
+
+    #barra-menu ul li a{
+        color: #011927;
+        text-decoration: none;
+        font-size: 1rem;
+        width: 100%;
+    }
+    #barra-menu ul li a:hover{
+        padding: 8px;
+        border-radius: 15px;
+        background-color: #5bacdf;
+    }
+
+    .c-icon{
+        margin-top: 50%;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        overflow: hidden;
+    }
+
+    .c-icon span{
+        color: #fff;
+        font-size: 1rem;
+    }
+
+    @media screen and (max-width:580px){
+        .title h1{
+            font-size: 2.2rem;
+            margin-left: 1.5rem;
+        }
+
+        .esquerda p{
+            font-size: 1rem;
+            margin-left: 1.5rem;
+            width: 450px;
+        }
+        
+        button{
+            margin-left: 1.5rem;
+        }
+
+        .direita img{
+            max-width: 100%;
+            width: 450px;
+            margin-top: 4.5rem;
+            height: auto;
+        }
+    }
+    @media screen and (max-width:440px){
+        .direita img{
+            margin-left: 1.2rem;
+            width: 400px;
+        }
+        
+        .esquerda p{
+            width: 440px;
+        }
+    }
 }
