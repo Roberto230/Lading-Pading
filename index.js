@@ -1,11 +1,16 @@
-function abrirmenu(){
-    let barraMenuAberto = document.getElementById('barra-menu');
-    let menuFechado = barraMenuAberto.style.width = "0px";
-    let menuAberto = barraMenuAberto.style.width = "300px";
+window.onload = function(){
+  let clicarMenu = document.getElementById('clicarMenu');
+  let menu = document.getElementById('barra-menu');
 
-    if (menuFechado){
-        menuAberto;
-    }else{
-        menuFechado;
-    }
+clicarMenu.addEventListener('click', function(){
+  
+  if(menu.style.width == "0px"){
+    menu.style.width = "350px";
+  }else{
+     menu.style.width = "0px";
+  }
+
+  console.log('funcionou');
+})
+  
 }
